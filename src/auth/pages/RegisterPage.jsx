@@ -13,7 +13,7 @@ const formData ={
 }
 
 const formValidations = {
-  email: [(value) => value.includes('@'), 'El correo no es valido'],
+  email: [(value) => value.includes('@'), 'Introduce un correo válido'],
   password: [(value) => value.length >= 6, 'La contrasena debe tener mas de 6 letras'],
   displayName: [(value) => value.length >= 1, 'El nombre es obligatorio'],
 }
@@ -62,7 +62,7 @@ export const RegisterPage = () => {
 
             <Grid item xs={12} sx={{mt:2}}>
               <TextField 
-                label="correo" 
+                label="Correo" 
                 type="email" 
                 placeholder="correo@gmail.com" 
                 fullWidth
@@ -76,7 +76,7 @@ export const RegisterPage = () => {
 
             <Grid item xs={12} sx={{mt:2}}>
               <TextField 
-                label="contraseña" 
+                label="Contraseña" 
                 type="password" 
                 placeholder="************"
                 fullWidth
