@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link as RouterLink } from "react-router-dom";
-import { Alert, Button, Grid, Link, TextField } from "@mui/material";
+import { Alert, Button, Grid, Link, TextField, Typography } from "@mui/material";
 import { AuthLayout } from "../layout/AuthLayout";
 import { useForm } from "../../hooks/useForm";
 import { creatingUserWithEmailPassword } from "../../store/auth";
@@ -44,6 +44,7 @@ export const RegisterPage = () => {
 
   return (
       <AuthLayout title="Registro">
+        <Typography variant="subtitle1" component="span" color="primary">A un solo paso de escribir sobre tu día</Typography>
         <form onSubmit={ onSubmit } className="animate__animated animate__fadeIn animate__faster">
           <Grid container>
             <Grid item xs={12} sx={{mt:2}}>
